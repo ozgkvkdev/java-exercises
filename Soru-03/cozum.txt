@@ -1,0 +1,67 @@
+SORU:
+Kullanıcıdan iki adet sayı alarak bu sayıların çarpımını ekrana yazdırınız.
+
+AMAÇ:
+Java'da kullanıcıdan veri almayı ve alınan sayılar üzerinde matematiksel işlem yapmayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+Kullanıcıdan alınacak iki sayı için sayi1 ve sayi2 isimli int değişkenleri oluşturulmuştur.
+
+nextInt() metodu kullanılarak kullanıcıdan iki adet tam sayı alınmıştır.
+
+Alınan iki sayı çarpma operatörü (*) kullanılarak çarpılmış ve sonuç sonuc isimli değişkende tutulmuştur.
+
+Son olarak çarpım sonucu System.out.println() kullanılarak ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextInt() metodu
+* int veri tipi
+* Değişkenler
+* Çarpma (*) operatörü
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+Scanner scanner = new Scanner(System.in);
+
+Kullanıcıdan veri almak için Scanner nesnesi oluşturulmuştur.
+
+sayi1 = scanner.nextInt();
+sayi2 = scanner.nextInt();
+
+Kullanıcıdan iki adet tam sayı alınarak sayi1 ve sayi2 değişkenlerine atanmıştır.
+
+int sonuc = sayi1 * sayi2;
+
+Alınan iki sayı * operatörü kullanılarak çarpılmış ve sonuç sonuc değişkenine atanmıştır.
+
+System.out.println("Iki sayinin carpimi: " + sonuc);
+
+Elde edilen çarpım sonucu ekrana yazdırılmıştır.
+
+scanner.close();
+
+Program sonunda Scanner nesnesi kapatılmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+5
+4
+
+Program çıktısı:
+Iki sayinin carpimi: 20
+
+ÖĞRENİLENLER:
+Bu soruda Java'da Scanner sınıfını kullanarak kullanıcıdan veri alma, değişken kullanma ve matematiksel çarpma işlemi yapma öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan alınan iki sayı başarılı bir şekilde çarpılmış ve sonuç ekrana yazdırılmıştır.
