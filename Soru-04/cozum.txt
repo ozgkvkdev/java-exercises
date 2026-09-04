@@ -1,0 +1,63 @@
+SORU:
+Kullanıcıdan bölünen ve bölen iki sayı alarak bölme işleminin bölümünü ve kalanını ekrana yazdırınız.
+
+AMAÇ:
+Java'da kullanıcıdan veri almayı, bölme işlemi yapmayı ve bölüm ile kalan değerlerini hesaplamayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+Bölünen ve bölen sayıları saklamak için bolunen ve bolen isimli int değişkenleri oluşturulmuştur.
+
+Kullanıcıdan Scanner'ın nextInt() metodu ile bölünen ve bölen sayılar alınmıştır.
+
+Bölme işleminin sonucunu bulmak için / operatörü kullanılmıştır. Bu işlem sonucunda bölüm değeri hesaplanmıştır.
+
+Bölme işleminden kalan değeri bulmak için % (mod) operatörü kullanılmıştır.
+
+Son olarak bölüm ve kalan değerleri ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextInt() metodu
+* int veri tipi
+* Değişkenler
+* Bölme (/) operatörü
+* Mod (%) operatörü
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+bolum = bolunen / bolen;
+
+Bu kod ile bölünen sayının bölen sayıya bölünmesi sonucunda elde edilen bölüm hesaplanmıştır.
+
+kalan = bolunen % bolen;
+
+% operatörü kullanılarak bölme işleminden kalan değer hesaplanmıştır.
+
+System.out.println("Bolum: " + bolum);
+System.out.println("Kalan: " + kalan);
+
+Hesaplanan bölüm ve kalan değerleri ekrana yazdırılmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+17
+5
+
+Program çıktısı:
+Bolum: 3
+Kalan: 2
+
+ÖĞRENİLENLER:
+Bu soruda Java'da Scanner ile kullanıcıdan veri alma, bölme işlemi yapma, / operatörü ile bölüm bulma ve % operatörü ile kalan bulma öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan alınan bölünen ve bölen sayılar kullanılarak bölme işleminin bölümü ve kalanı başarılı bir şekilde hesaplanıp ekrana yazdırılmıştır.
