@@ -1,0 +1,60 @@
+SORU:
+Kullanıcıdan iki adet sayı alarak bu sayıları ekrana yazdırınız.
+
+AMAÇ:
+Java'da kullanıcıdan klavye aracılığıyla veri almayı ve alınan verileri değişkenlerde saklamayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+Kullanıcıdan alınacak iki sayı için sayi1 ve sayi2 isimli int değişkenleri oluşturulmuştur.
+
+nextInt() metodu kullanılarak kullanıcıdan iki adet tam sayı alınmış ve ilgili değişkenlere atanmıştır.
+
+Son olarak alınan iki sayı System.out.println() kullanılarak ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextInt() metodu
+* int veri tipi
+* Değişkenler
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+Scanner scanner = new Scanner(System.in);
+
+Bu kod ile kullanıcıdan veri almak için Scanner nesnesi oluşturulmuştur.
+
+sayi1 = scanner.nextInt();
+sayi2 = scanner.nextInt();
+
+Bu kodlar ile kullanıcıdan iki adet tam sayı alınmıştır.
+
+System.out.println("Ilk sayim: " + sayi1 + " Ikinci sayim: " + sayi2);
+
+Bu kod ile kullanıcıdan alınan iki sayı ekrana yazdırılmıştır.
+
+scanner.close();
+
+Program sonunda Scanner nesnesi kapatılmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+5
+10
+
+Program çıktısı:
+Ilk sayim: 5 Ikinci sayim: 10
+
+ÖĞRENİLENLER:
+Bu soruda Java'da Scanner sınıfını kullanarak kullanıcıdan veri alma, alınan verileri değişkenlerde saklama ve ekrana yazdırma öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan iki adet sayı başarılı bir şekilde alınmış ve ekrana yazdırılmıştır.
