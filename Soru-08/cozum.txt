@@ -1,0 +1,89 @@
+SORU:
+Kullanıcıdan a, b ve h değerlerini alarak dikdörtgenler prizmasının taban alanını, yanal alanını, toplam alanını ve hacmini hesaplayınız.
+
+AMAÇ:
+Java'da kullanıcıdan birden fazla değer almayı ve alınan değerleri geometrik alan ve hacim hesaplamalarında kullanmayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+Prizmanın kenar uzunluklarını temsil etmek için a, b ve h isimli int değişkenleri oluşturulmuştur.
+
+Kullanıcıdan nextInt() metodu ile a, b ve h değerleri alınmıştır.
+
+Dikdörtgenler prizmasının taban alanı a*b formülü kullanılarak hesaplanmıştır.
+
+Yanal alan, prizmanın yan yüzlerinin alanları toplanarak
+2*a*h + 2*b*h
+formülü ile hesaplanmıştır.
+
+Toplam alan, yanal alan ile iki adet taban alanının toplamı alınarak hesaplanmıştır.
+
+Hacim ise a*b*h formülü kullanılarak hesaplanmıştır.
+
+Hesaplanan tüm değerler ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextInt() metodu
+* int veri tipi
+* Değişkenler
+* Çarpma (*) operatörü
+* Toplama (+) operatörü
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+taban_alanı = a*b;
+
+Bu ifade ile prizmanın taban alanı hesaplanmıştır.
+
+yanal_alan = 2 * a * h + 2 * b * h;
+
+Bu ifade ile prizmanın dört yan yüzünün toplam alanı hesaplanmıştır.
+
+toplam_alan = yanal_alan + 2*taban_alanı;
+
+Yanal alana iki adet taban alanı eklenerek prizmanın toplam yüzey alanı hesaplanmıştır.
+
+hacim = a * b * h;
+
+Bu ifade ile dikdörtgenler prizmasının hacmi hesaplanmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+a = 3
+b = 4
+h = 5
+
+Hesaplama:
+
+Taban Alanı:
+3 * 4 = 12
+
+Yanal Alan:
+2 * 3 * 5 + 2 * 4 * 5 = 70
+
+Toplam Alan:
+70 + 2 * 12 = 94
+
+Hacim:
+3 * 4 * 5 = 60
+
+Program çıktısı:
+Taban Alani: 12
+Yanal Alani: 70
+Toplam Alani: 94
+Hacim: 60
+
+ÖĞRENİLENLER:
+Bu soruda Java'da kullanıcıdan birden fazla değer alma, değişkenleri matematiksel işlemlerde kullanma ve geometrik alan-hacim formüllerini Java ile hesaplama öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan alınan a, b ve h değerleri kullanılarak dikdörtgenler prizmasının taban alanı, yanal alanı, toplam alanı ve hacmi başarılı bir şekilde hesaplanıp ekrana yazdırılmıştır.
