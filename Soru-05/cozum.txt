@@ -1,0 +1,77 @@
+SORU:
+Kullanıcıdan a, b, c ve x değerlerini alarak a*x² + b*x + c matematiksel ifadesinin sonucunu hesaplayınız.
+
+AMAÇ:
+Java'da kullanıcıdan birden fazla veri almayı, değişkenleri matematiksel işlemlerde kullanmayı ve işlem önceliğine uygun şekilde bir matematiksel ifade hesaplamayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+a, b, c ve x değerlerini saklamak için int türünde değişkenler oluşturulmuştur.
+
+Scanner'ın nextInt() metodu kullanılarak kullanıcıdan sırasıyla a, b, c ve x değerleri alınmıştır.
+
+Alınan değerler kullanılarak a*x*x + b*x + c matematiksel işlemi gerçekleştirilmiştir.
+
+Hesaplanan sonuç sonuc isimli değişkende tutulmuştur.
+
+Son olarak sonuç System.out.println() kullanılarak ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextInt() metodu
+* int veri tipi
+* Değişkenler
+* Çarpma (*) operatörü
+* Toplama (+) operatörü
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+a = scanner.nextInt();
+b = scanner.nextInt();
+c = scanner.nextInt();
+x = scanner.nextInt();
+
+Bu kodlar ile kullanıcıdan a, b, c ve x değerleri alınarak ilgili değişkenlere atanmıştır.
+
+sonuc = a*x*x + b*x + c;
+
+Bu ifade ile a*x² + b*x + c matematiksel işlemi Java kullanılarak hesaplanmıştır.
+
+Burada x*x işlemi x'in karesini hesaplamak için kullanılmıştır.
+
+System.out.println("Sonuç: " + sonuc);
+
+Hesaplanan sonuç ekrana yazdırılmıştır.
+
+scanner.close();
+
+Program sonunda Scanner nesnesi kapatılmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+2
+3
+4
+5
+
+Hesaplama:
+2*5*5 + 3*5 + 4
+= 50 + 15 + 4
+= 69
+
+Program çıktısı:
+Sonuç: 69
+
+ÖĞRENİLENLER:
+Bu soruda Java'da kullanıcıdan birden fazla değer alma, değişkenleri matematiksel işlemlerde kullanma, çarpma ve toplama operatörlerini kullanma ve matematiksel bir ifadeyi Java ile hesaplama öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan alınan a, b, c ve x değerleri kullanılarak a*x² + b*x + c ifadesinin sonucu başarılı bir şekilde hesaplanıp ekrana yazdırılmıştır.
