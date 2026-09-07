@@ -1,0 +1,70 @@
+SORU:
+Kullanıcıdan Fahrenheit sıcaklık değeri alarak bu değeri Santigrat (Celsius) değerine dönüştürünüz.
+
+AMAÇ:
+Java'da ondalıklı sayılarla çalışmayı, kullanıcıdan double türünde veri almayı ve matematiksel bir formül kullanarak sıcaklık dönüşümü yapmayı öğrenmek.
+
+ÇÖZÜM MANTIĞI:
+İlk olarak kullanıcıdan veri almak için Scanner sınıfı import edilmiştir.
+
+Daha sonra Scanner sınıfından scanner isimli bir nesne oluşturulmuştur.
+
+Fahrenheit ve Santigrat değerlerini saklamak için double türünde fah ve cen değişkenleri oluşturulmuştur.
+
+Scanner'ın nextDouble() metodu kullanılarak kullanıcıdan Fahrenheit değeri alınmıştır.
+
+Fahrenheit değerini Santigrat'a çevirmek için aşağıdaki formül kullanılmıştır:
+
+(fahrenheit - 32) * 5 / 9
+
+Hesaplanan Santigrat değeri cen değişkenine atanmıştır.
+
+Son olarak sonuç System.out.println() kullanılarak ekrana yazdırılmıştır.
+
+KULLANILAN YAPILAR:
+
+* import java.util.Scanner
+* Scanner sınıfı
+* nextDouble() metodu
+* double veri tipi
+* Değişkenler
+* Çıkarma (-) operatörü
+* Çarpma (*) operatörü
+* Bölme (/) operatörü
+* System.out.println()
+* scanner.close()
+
+KODDAKİ ÖNEMLİ KISIMLAR:
+
+fah = scanner.nextDouble();
+
+Bu kod ile kullanıcıdan ondalıklı veya tam sayı Fahrenheit değeri alınmıştır.
+
+cen = (fah - 32) * 5 / 9;
+
+Bu ifade ile Fahrenheit değeri Santigrat'a dönüştürülmüştür.
+
+Burada önce Fahrenheit değerinden 32 çıkarılmış, ardından 5 ile çarpılıp 9'a bölünmüştür.
+
+System.out.println("Santigrat degeri: " + cen);
+
+Hesaplanan Santigrat değeri ekrana yazdırılmıştır.
+
+ÖRNEK ÇALIŞMA:
+
+Kullanıcı:
+212
+
+Hesaplama:
+(212 - 32) * 5 / 9
+= 180 * 5 / 9
+= 100
+
+Program çıktısı:
+Santigrat degeri: 100.0
+
+ÖĞRENİLENLER:
+Bu soruda Java'da double veri tipiyle çalışma, kullanıcıdan ondalıklı veri alma, matematiksel formül kullanma ve sıcaklık birimleri arasında dönüşüm yapma öğrenilmiştir.
+
+SONUÇ:
+Kullanıcıdan alınan Fahrenheit sıcaklık değeri başarılı bir şekilde Santigrat değerine dönüştürülerek ekrana yazdırılmıştır.
