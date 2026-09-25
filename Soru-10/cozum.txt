@@ -1,0 +1,41 @@
+================================================================================
+SORU 10: KARENİN ALANI HESABI ÇÖZÜMÜ
+PROBLEM TANIMI
+
+Kullanıcıdan alınan bir kenar uzunluğuna göre karenin alanını
+hesaplayan Java programı:
+
+Alan = kenar × kenar (kenar²)
+KODUN ADIM ADIM ANALİZİ
+
+• Kütüphane İçe Aktarma:
+import java.util.Scanner;
+Kullanıcıdan klavye aracılığıyla veri almak için gerekli Scanner sınıfı.
+
+• Değişken Tanımlama:
+int kenar, alan;
+Kenar uzunluğunu ve hesaplanacak alan değerini tutmak için tam sayı
+veri tipi olan int kullanılmıştır.
+
+• Kullanıcı Girdisi:
+kenar = input.nextInt();
+Kullanıcının girdiği tam sayı kenar değişkenine atanır.
+
+• Matematiksel Formül Uygulaması:
+alan = kenar * kenar;
+Karenin alanı, bir kenar uzunluğunun kendisiyle çarpımıyla bulunur.
+
+• Çıktı ve Kaynak Kapatma:
+System.out.println("Karenin alani = " + alan); -> Sonucu ekrana yazdırır.
+input.close();                                -> Scanner nesnesini kapatır.
+
+ÖRNEK HESAPLAMALAR
+
+Kenar (int) | Hesaplama Adımı                               | Alan
+------------+-----------------------------------------------+--------
+kenar = 0   | 0 * 0                                         | 0
+kenar = 4   | 4 * 4                                         | 16
+kenar = 7   | 7 * 7                                         | 49
+kenar = 12  | 12 * 12                                       | 144
+
+================================================================================
