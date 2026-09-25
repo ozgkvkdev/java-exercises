@@ -1,0 +1,45 @@
+================================================================================
+SORU 11: MİL - KİLOMETRE DÖNÜŞÜMÜ ÇÖZÜMÜ
+PROBLEM TANIMI
+
+Kullanıcıdan mil cinsinden alınan bir mesafe değerini, sabit bir dönüştürme
+katsayısı (1 Mil = 1.609 Km) kullanarak kilometreye çeviren Java programı:
+
+Kilometre = Mil × 1.609
+KODUN ADIM ADIM ANALİZİ
+
+• Kütüphane İçe Aktarma:
+import java.util.Scanner;
+Kullanıcıdan girdi almak için kullanılan standart Java kütüphanesi.
+
+• Sabit ve Değişken Tanımlama:
+final double MIL_TO_KM = 1.609;
+final anahtar kelimesi ile değerinin değiştirilemeyeceği (sabit olduğu)
+belirtilmiştir.
+double milYol, kmYol;
+Hassas ondalıklı ölçüm değerleri tutulacağı için double veri tipi
+tercih edilmiştir.
+
+• Kullanıcı Girdisi:
+milYol = scanner.nextDouble();
+Kullanıcının girdiği mil değeri okunur.
+
+• Matematiksel Formül Uygulaması:
+kmYol = milYol * MIL_TO_KM;
+Girilen mil değeri sabit katsayı ile çarpılarak kilometre cinsinden
+karşılığı bulunur.
+
+• Çıktı ve Kaynak Kapatma:
+System.out.println("Araba " + kmYol + " km yol almistir."); -> Sonucu ekrana yazdırır.
+scanner.close();                                           -> Kaynağı serbest bırakır.
+
+ÖRNEK HESAPLAMALAR
+
+Mil (double) | Hesaplama Adımı (Mil * 1.609)                  | Kilometre
+-------------+------------------------------------------------+-----------
+milYol = 1.0 | 1.0 * 1.609                                     | 1.609
+milYol = 10  | 10 * 1.609                                      | 16.09
+milYol = 60  | 60 * 1.609                                      | 96.54
+milYol = 100 | 100 * 1.609                                     | 160.9
+
+================================================================================
