@@ -1,0 +1,48 @@
+================================================================================
+SORU 09: FONKSİYON HESABI ÇÖZÜMÜ
+PROBLEM TANIMI
+
+Kullanıcıdan alınan bir x sayısı için aşağıdaki 3. dereceden polinom
+fonksiyonunun sonucunu hesaplayan Java programı:
+
+f(x) = x³ + 13x² + 47x + 5
+KODUN ADIM ADIM ANALİZİ
+
+• kütüphane İçe Aktarma:
+import java.util.Scanner;
+Kullanıcıdan klavye aracılığıyla girdi almak için gerekli Java sınıfı.
+
+• Değişken Tanımlama:
+float x, sonuc;
+Kullanıcı girdisini ve hesaplanan sonucu tutmak için kesirli (ondalıklı)
+sayı tipi olan float kullanılmıştır.
+
+• Kullanıcı Girdisi:
+x = input.nextFloat();
+Kullanıcının girdiği sayı x değişkenine atanır.
+
+• Matematiksel Formül Uygulaması:
+sonuc = x * x * x + 13 * x * x + 47 * x + 5;
+
+x * x * x       --> x³ (x küp)
+
+13 * x * x     --> 13x² (13 çarpı x kare)
+
+47 * x         --> 47x (47 çarpı x)
+
+5            --> Sabit terim
+
+• Çıktı ve Kaynak Kapatma:
+System.out.println("Sonuc: " + sonuc); -> Sonucu ekrana yazdırır.
+input.close();                        -> Bellek sızıntısını önler.
+
+ÖRNEK HESAPLAMALAR
+
+Girdi (x)   | Hesaplama Adımı                                | Sonuç
+------------+------------------------------------------------+--------
+x = 0       | 0³ + 13(0)² + 47(0) + 5                        | 5.0
+x = 1       | 1 + 13 + 47 + 5                                | 66.0
+x = 2       | 8 + 52 + 94 + 5                                | 159.0
+x = -1      | (-1) + 13 + (-47) + 5                          | -30.0
+
+================================================================================
