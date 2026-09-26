@@ -1,0 +1,10 @@
+Problem:
+Sabit bir mesafe (450 km) ve kullanıcıdan alınan varış süresi (saat) bilgisi kullanılarak ortalama hızın hesaplandığı Java programının yazılması.
+
+Çözüm Adımları:
+1. Kullanıcıdan seyahat süresini almak için Scanner sınıfı tanımlandı.
+2. Yol mesafesi sabiti `final double yol = 450;` şeklinde tanımlandı.
+3. Kullanıcıdan seyahat süresi (`saat`) `nextDouble()` metodu ile alındı.
+4. Ortalama hız, temel fizik formülü olan "Hız = Yol / Zaman" (`yol / saat`) kullanılarak hesaplandı.
+5. Hesaplanan ortalama hız değeri ekrana yazdırıldı.
+6. Scanner nesnesi kapatılarak bellek kaynağı serbest bırakıldı.
