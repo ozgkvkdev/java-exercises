@@ -1,0 +1,9 @@
+Problem:
+Kullanıcıdan en, boy ve yükseklik ölçüleri alınarak bir havuzun hacmini (metreküp değerini) hesaplayan Java programının yazılması.
+
+Çözüm Adımları:
+1. Kullanıcıdan konsol girdisi almak amacıyla Scanner sınıfı kullanıldı.
+2. Havuzun en, boy ve yükseklik ölçüleri kullanıcıdan `double` veri tipinde alındı.
+3. Hacim (metreküp), "en * boy * yükseklik" formülü kullanılarak hesaplandı.
+4. Hesaplanan metreküp değeri ekrana yazdırıldı.
+5. Kullanılan Scanner nesnesi kapatılarak sistem kaynakları serbest bırakıldı.
