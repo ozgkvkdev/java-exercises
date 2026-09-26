@@ -1,0 +1,13 @@
+Problem:
+Kullanıcıdan alınan iki tamsayının (A ve B) değerlerini geçici bir değişken kullanarak birbiriyle takas eden (swap) Java programının yazılması.
+
+Çözüm Adımları:
+1. Kullanıcıdan A ve B sayılarını almak için Scanner sınıfı tanımlandı.
+2. A ve B değerleri `nextInt()` metodu ile kullanıcıdan alındı.
+3. Değişim yapılmadan önceki A ve B değerleri ekrana yazdırıldı.
+4. İki değişkenin değerini takas etmek için `gecici` adında geçici bir yardımcı değişken kullanıldı:
+   - A'nın ilk değeri `gecici` değişkeninde saklandı.
+   - B'nin değeri A'ya atandı.
+   - Saklanan ilk A değeri (`gecici`), B değişkenine aktarıldı.
+5. Değerleri yer değiştirmiş olan A ve B değişkenleri ekrana basıldı.
+6. Kaynak yönetimi için Scanner nesnesi kapatıldı.
