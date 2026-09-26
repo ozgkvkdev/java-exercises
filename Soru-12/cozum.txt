@@ -1,0 +1,11 @@
+Problem:
+Kullanıcıdan yarıçap bilgisi alınarak bir dairenin alanını ve çevresini hesaplayan Java programının yazılması.
+
+Çözüm Adımları:
+1. Kullanıcıdan veri almak için Scanner sınıfından bir nesne oluşturuldu.
+2. Pi sayısı sabit bir değer (PI = 3.14) olarak tanımlandı.
+3. Kullanıcıdan yarıçap (yaricap) değeri alındı.
+4. Dairenin alanı "PI * r^2" formülü ile hesaplandı.
+5. Dairenin çevresi "2 * PI * r" formülü ile hesaplandı.
+6. Elde edilen alan değeri ekrana ek tamsayı/ondalık biçimlendirmesi olmadan yazdırıldı; çevre değeri ise virgülden sonra iki basamak olacak şekilde (%.2f) biçimlendirilerek ekrana basıldı.
+7. Bellek sızıntısını önlemek adına Scanner nesnesi kapatıldı.
